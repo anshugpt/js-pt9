@@ -112,3 +112,76 @@ for(let i=0; i<ancColor.length; i++){
 
 
 
+//* Navigation 
+// we can navigate the parent of the element
+
+//* parentElement -> to navigate the parent of the element
+
+// heading.parentElement //* -> return body -> for heading element body is the parent -> only return one output because there will be only one parent not many
+
+//* children -> to navigate the children of the given element
+
+let imgBox = document.querySelector(".images");
+// imgBox.children //* -> we will get a collection of array of children of the element -> in this we got an array of length 3 collection
+
+
+//* Siblings
+//* previousElementSibling -> access the just before element of the mentioned element
+
+//* nextElementSibling -> access the just after element of the mentioned element
+
+
+
+//* Adding Element
+// to add new element in your document
+// document.createElement("nameOfElement");
+// now we just created it it time to add into our body tag
+
+//* parentName.appendChild(created variable name);
+
+let newP = document.createElement("p") // created
+newP.innerText = "Hi i am new here!"
+let body = document.querySelector("body")
+body.appendChild(newP); // added to page
+
+//* Append
+// by this method we can add str, elements, etc
+// add at last
+
+// like we want to add more text into new para
+
+newP.append(" I'm appended by Anshu"); // more text added to new para
+
+
+//* Prepend
+// same as append but -> add at first
+// prepend(element)
+
+newP.prepend("Hello I'm Anshu "); // added at start
+
+
+//* insertAdjacentElement(position, element)
+//* see mdn for more clarity
+
+// there are four type of position
+
+// if we want to insert before -> beforebegin
+// if insert inside it as a first child -> afterbegin
+// if insert inside but at last child -> beforeend
+// if insert after the element -> afterend
+
+
+//* Removing Element
+//* removeChild(element)
+// body.removeChild(newP);
+
+//* remove(element)
+// body.remove() -> remove all the body :<)
+
+
+
+
+
+
+
+
