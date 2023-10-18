@@ -95,5 +95,20 @@ for(let i=0; i<ancColor.length; i++){
     ancColor[i].style.color = "yellow"; //* that are inline style can't change css style
 }
 
+//* using classList
+// we can access the class of the element
+// syntax -> document.classList -> to access class list of element
+
+//* to add new class in the element -> classList.add("className");
+
+//* to remove class from the element -> classList.remove("className");
+
+//* to check the class exist in the element -> classList.contains("className"); return -> true / false
+
+//* toggle method -> pass className -> if class exist then this method remove it if class do not exist then this method will add that class -> syntax -> classList.toggle("className");
+
+// heading.classList.toggle("green"); //* -> return true because gree class do not exist in heading element then he added the class "green".
+
+
 
 
