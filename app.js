@@ -61,8 +61,39 @@
 // show what we see in screen
 
 //* textContent
-// show all the full text
+// show all the full text that we write on HTML
 // no hidden
 
 //* innerHTML
 // show the full markup like all the tags
+
+//* Manipulating on HTML
+
+let heading = document.querySelector("h1");
+heading.innerText = "Anshu Gupta"
+
+
+//* Manipulating Attribute
+//* if we want to change value of attribute -> obj.setAttribute("attr", "val"); -> obj -> document
+// attr -> the attribute we want to change
+// val -> the change in attribute
+
+// if you want to access the attribute :-
+//* document.getAttribute("attr");
+
+// the pair is called getter & setter
+
+
+//* Manipulating Style
+// we access style from document object by -> document.style
+
+
+// let's change color of all ancor of box class
+
+let ancColor = document.querySelectorAll(".box a");
+for(let i=0; i<ancColor.length; i++){
+    ancColor[i].style.color = "yellow"; //* that are inline style can't change css style
+}
+
+
+
