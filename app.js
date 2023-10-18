@@ -41,3 +41,28 @@
 // we can get element by tag name also
 // return the element as an HTML collection or empty collection (if not found)
 // syntax -> document.getElementByTagName("tagName");
+
+
+//* Query Selectors
+// most used selector
+// allows us to use any CSS selector
+// syntax -> 
+// document.querySelector("p"); //* -> selects first p element
+// document.querySelector("#myId"); //* -> selects first element with id = myId
+// document.querySelector(".myClass"); //* -> selects the first element with class = myClass
+
+// document.querySelectorAll("p"); //* select all p elements
+
+
+//* Properties & Methods
+
+//* innerText
+// show the visible text contained in node
+// show what we see in screen
+
+//* textContent
+// show all the full text
+// no hidden
+
+//* innerHTML
+// show the full markup like all the tags
