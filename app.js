@@ -2,7 +2,7 @@
 // the DOM represent a document with a logical tree
 // it allow us to manipulate / change webpage content (html elements)
 
-// by using javascript to change html, css is tow step prosses
+// by using javascript to change html, css is two step prosses
 // 1. select
 //2. change / manipulate
 
@@ -107,7 +107,7 @@ for(let i=0; i<ancColor.length; i++){
 
 //* toggle method -> pass className -> if class exist then this method remove it if class do not exist then this method will add that class -> syntax -> classList.toggle("className");
 
-// heading.classList.toggle("green"); //* -> return true because gree class do not exist in heading element then he added the class "green".
+// heading.classList.toggle("green"); //* -> return true because green class do not exist in heading element then he added the class "green".
 
 
 
@@ -177,6 +177,76 @@ newP.prepend("Hello I'm Anshu "); // added at start
 
 //* remove(element)
 // body.remove() -> remove all the body :<)
+
+
+//* PQ 
+
+
+//Qs1
+
+let pq1 = document.createElement("p");
+pq1.setAttribute("class", "red-text");
+pq1.append("Hey I'm red!");
+body.append(pq1);
+
+//Qs2
+
+let pq2 = document.createElement("h3")
+pq2.setAttribute("class", "blue-text")
+pq2.append("I'm a blue h3!") 
+body.append(pq2)
+
+
+//Qs3
+
+let pq3 = document.createElement("div")
+let h1Div = document.createElement("h1")
+let pDiv = document.createElement("p")
+pq3.setAttribute("class", "div-pq")
+h1Div.append("I'm in a div!")
+pDiv.append("ME TOO!")
+pq3.appendChild(h1Div)
+pq3.appendChild(pDiv)
+body.append(pq3)
+
+
+
+//* Assiment Question
+
+//Qs1
+
+let input = document.createElement("input")
+let btn = document.createElement("button")
+btn.append("Click me")
+body.append(input)
+body.append(btn)
+
+//Qs2
+
+input.setAttribute("placeholder", "username")
+btn.setAttribute("id", "btn")
+
+//Qs3
+
+let styleBtn = document.querySelector("#btn")
+styleBtn.style.backgroundColor = "blue"
+styleBtn.style.color = "white"
+
+//Qs4
+
+let h1elem = document.createElement("h1")
+h1elem.append("DOM Practice")
+h1elem.style.textDecoration = "underlined"
+h1elem.style.color = "purple"
+body.append(h1elem)
+
+//Qs5
+
+let pTag = document.createElement("p")
+pTag.append("Anshu Gupta Practice")
+pTag.style.fontWeight = "bold"
+body.append(pTag)
+
 
 
 

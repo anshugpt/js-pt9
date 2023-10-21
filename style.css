@@ -26,3 +26,13 @@ body {
 #description {
   background-color: antiquewhite;
 }
+.red-text {
+  color: red;
+}
+.blue-text {
+  color: blue;
+}
+.div-pq {
+  background-color: pink;
+  border: 2px solid black;
+}
